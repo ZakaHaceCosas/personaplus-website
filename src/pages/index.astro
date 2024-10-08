@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../layouts/Hero.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="PersonaPlus">
+    <Nav />
+    <Hero />
+
+    <section>
+        <div class="textDiv">
+            <h1 style={{ fontSize: "50px" }}>
+                What is <span>PersonaPlus</span>?
+            </h1>
+            <h2 style={{ fontWeight: 400 }}>
+                PersonaPlus is a simple app to help you <span
+                    >give yourself a plus</span
+                >
+                by providing routines, tips, insights, reminders, and everything
+                else you need to lead a sportier and healthier life.
+            </h2>
+        </div>
+        <!-- <div class="imagediv">
+            <img src="/mockup1.png" alt="Decorative." />
+        </div> -->
+    </section>
+    {
+        /* THESE REMAIN HIDDEN UNTIL WE ACTUALLY GOT SOMETHING TO SHOW <section>
+        <div className="textDiv">
+            <h1 style={{ fontSize: "52px" }}>{t("howtouse")}</h1>
+            <h3 style={{ fontWeight: 400 }}>{t("howtouseblock")}</h3>
+        </div>
+        <div className="imagediv">
+            <img src="/mockup2.png" alt="Decorative." />
+            <p
+                style={{
+                    maxWidth: "50vw",
+                    wordWrap: "break-word",
+                    textAlign: "center",
+                    fontSize: "xx-small",
+                    opacity: 0.5,
+                }}
+            >
+                {t("mockups")}
+            </p>
+        </div>
+    </section>
+    <section id="privacy">
+        <div className="imagediv">
+            <img
+                style={{ height: "60%" }}
+                src={`/${t("differentimg")}.png`}
+                alt="Decorative."
+            />
+        </div>
+        <div className="textDiv">
+            <h1>{t("different")}</h1>
+            <p>{t("differentblock")}</p>
+            <a
+                href="https://github.com/ZakaHaceCosas/personaplus"
+                className="btn buttonAce"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {t("community.githubRepo")}
+            </a>
+        </div>
+    </section> */
+    }
+    <div class="rowWithStuff" id="socials">
+        <h1>Give yourself a plus!</h1>
+        <p
+            style={{
+                maxWidth: "50vw",
+                textWrap: "wrap",
+                textAlign: "center",
+            }}
+        >
+            First preview version is available. Try it out!
+        </p>
+        <div class="actualStuffRow">
+            <a
+                class="btn buttonGod"
+                href="https://github.com/ZakaHaceCosas/personaplus/releases/latest"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Download now!
+            </a>
+        </div>
+        <p
+            style={{
+                maxWidth: "40vw",
+                textWrap: "wrap",
+                textAlign: "center",
+                fontSize: "xx-small",
+                opacity: 0.5,
+            }}
+        >
+            PS. The app is still a work in progress. Expect errors and lack of
+            features.
+        </p>
+    </div>
+    <Footer />
+    <!-- <Analytics />
+    <SpeedInsights /> -->
+</Layout>
