@@ -1,0 +1,32 @@
+{
+    "short_name": "PersonaPlus",
+    "name": "PersonaPlus",
+    "description": "Give yourself a plus!",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "64x64",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "logo256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#32FF80",
+    "background_color": "#0E1013",
+    "orientation": "landscape",
+    "scope": "/",
+    "prefer_related_applications": false,
+    "dir": "ltr",
+    "categories": ["health", "fitness", "wellness"],
+    "author": "ZakaHaceCosas"
+}
