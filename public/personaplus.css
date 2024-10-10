@@ -171,6 +171,15 @@ section div {
     padding: 50px;
 }
 
+section .textDiv h1 {
+    font-size: 45px;
+}
+
+section .textDiv p {
+    font-weight: 400;
+    font-size: 30px;
+}
+
 section img {
     flex: 1;
     width: 75%;
