@@ -11,10 +11,10 @@ import Footer from "../components/Footer.astro";
 
     <section>
         <div class="textDiv">
-            <h1 style={{ fontSize: "50px" }}>
+            <h1>
                 What is <span>PersonaPlus</span>?
             </h1>
-            <h2 style={{ fontWeight: 400 }}>
+            <h2>
                 PersonaPlus is a simple app to help you <span
                     >give yourself a plus</span
                 >
@@ -22,53 +22,52 @@ import Footer from "../components/Footer.astro";
                 else you need to lead a sportier and healthier life.
             </h2>
         </div>
-        <!-- <div class="imagediv">
-            <img src="/mockup1.png" alt="Decorative." />
-        </div> -->
-    </section>
-    {
-        /* THESE REMAIN HIDDEN UNTIL WE ACTUALLY GOT SOMETHING TO SHOW <section>
-        <div className="textDiv">
-            <h1 style={{ fontSize: "52px" }}>{t("howtouse")}</h1>
-            <h3 style={{ fontWeight: 400 }}>{t("howtouseblock")}</h3>
+        <div class="imagediv">
+            <img
+                loading="lazy"
+                decoding="async"
+                src="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus-website/main/static/pp-b24-screen-1.png"
+                alt="Real app screenshot, showcasing a session timer."
+            />
         </div>
-        <div className="imagediv">
-            <img src="/mockup2.png" alt="Decorative." />
-            <p
-                style={{
-                    maxWidth: "50vw",
-                    wordWrap: "break-word",
-                    textAlign: "center",
-                    fontSize: "xx-small",
-                    opacity: 0.5,
-                }}
-            >
-                {t("mockups")}
-            </p>
+    </section>
+
+    <section>
+        <div class="textDiv">
+            <h1>How does it work?</h1>
+            <h3>
+                Simple. Create <span>objectives</span> (AKA routines), and the app
+                will handle reminders, live sessions, and in the future, even more.
+            </h3>
+        </div>
+        <div class="imagediv">
+            <img
+                loading="lazy"
+                decoding="async"
+                src="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus-website/main/static/static/pp-b24-screen-2.png"
+                alt="Real app screenshot, showcasing the dashboard."
+            />
         </div>
     </section>
     <section id="privacy">
-        <div className="imagediv">
-            <img
-                style={{ height: "60%" }}
-                src={`/${t("differentimg")}.png`}
-                alt="Decorative."
-            />
-        </div>
-        <div className="textDiv">
-            <h1>{t("different")}</h1>
-            <p>{t("differentblock")}</p>
+        <div class="textDiv">
+            <h1>This one's <span>different.</span></h1>
+            <p>
+                No ads. No premium plans. No tracking. No privacy concerns. No
+                messy licenses.
+                <br />
+                Free Open Source Software. Period.
+            </p>
             <a
                 href="https://github.com/ZakaHaceCosas/personaplus"
-                className="btn buttonAce"
+                class="btn buttonAce"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                {t("community.githubRepo")}
+                See it on GitHub.
             </a>
         </div>
-    </section> */
-    }
+    </section>
     <div class="rowWithStuff" id="socials">
         <h1>Give yourself a plus!</h1>
         <p
