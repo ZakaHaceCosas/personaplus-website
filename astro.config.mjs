@@ -6,7 +6,7 @@ import vercelStatic from "@astrojs/vercel/static";
 export default defineConfig({
     output: "static",
     site: "https://personaplus.vercel.app/",
-    adapter: vercel({
+    adapter: vercelStatic({
         webAnalytics: {
             enabled: true,
         },
