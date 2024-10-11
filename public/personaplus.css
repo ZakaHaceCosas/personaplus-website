@@ -24,9 +24,9 @@
 }
 
 .disclaimer {
-    text-wrap: "wrap";
-    text-align: "center";
-    font-size: "xx-small";
+    text-wrap: wrap;
+    text-align: center;
+    font-size: smaller;
     opacity: 0.5;
 }
 
