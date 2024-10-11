@@ -14,6 +14,9 @@ importers:
       '@astrojs/vercel':
         specifier: ^7.8.1
         version: 7.8.1(astro@4.15.12(rollup@4.24.0)(typescript@5.6.2))
+      '@vercel/speed-insights':
+        specifier: ^1.0.12
+        version: 1.0.12
       astro:
         specifier: ^4.15.12
         version: 4.15.12(rollup@4.24.0)(typescript@5.6.2)
@@ -633,6 +636,29 @@ packages:
     resolution: {integrity: sha512-Rioz3LJkEKicKCi9BSyc1RXZ5R6GmXosFMeBSThh6msWSOiArKhb7c75MiWwZEgPL7x0/l3TAfH/l0cxKNuUFA==}
     engines: {node: '>=16'}
     hasBin: true
+
+  '@vercel/speed-insights@1.0.12':
+    resolution: {integrity: sha512-ZGQ+a7bcfWJD2VYEp2R1LHvRAMyyaFBYytZXsfnbOMkeOvzGNVxUL7aVUvisIrTZjXTSsxG45DKX7yiw6nq2Jw==}
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19
+      svelte: ^4
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   '@volar/kit@2.4.6':
     resolution: {integrity: sha512-OaMtpmLns6IYD1nOSd0NdG/F5KzJ7Jr4B7TLeb4byPzu+ExuuRVeO56Dn1C7Frnw6bGudUQd90cpQAmxdB+RlQ==}
@@ -2685,6 +2711,8 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@vercel/speed-insights@1.0.12': {}
 
   '@volar/kit@2.4.6(typescript@5.6.2)':
     dependencies:
