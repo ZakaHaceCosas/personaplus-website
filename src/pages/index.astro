@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../layouts/Hero.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
+import { SpeedInsights } from "@astrojs/vercel/speed-insights";
 ---
 
 <Layout title="PersonaPlus">
@@ -87,6 +88,6 @@ import Footer from "../components/Footer.astro";
         </p>
     </div>
     <Footer />
-    <!-- <Analytics />
-    <SpeedInsights /> -->
+    <Analytics />
+    <SpeedInsights />
 </Layout>
