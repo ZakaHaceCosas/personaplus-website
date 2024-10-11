@@ -23,6 +23,13 @@
     background: #22af70;
 }
 
+.disclaimer {
+    text-wrap: "wrap";
+    text-align: "center";
+    font-size: "xx-small";
+    opacity: 0.5;
+}
+
 /* variables */
 :root {
     --Background: rgba(14, 16, 19, 1);
@@ -116,10 +123,6 @@ body {
 }
 body {
     background-color: var(--Background);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 
 nav {
@@ -171,7 +174,7 @@ section div {
     padding: 50px;
 }
 
-section .imageDiv {
+section div.imageDiv {
     align-items: center !important;
     justify-content: center !important;
 }
