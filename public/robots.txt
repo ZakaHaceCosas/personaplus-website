@@ -2,6 +2,3 @@
 User-agent: *
 Crawl-delay: 500
 Disallow:
-
-User-agent: Google
-Disallow: /
