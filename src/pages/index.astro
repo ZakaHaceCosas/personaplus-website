@@ -3,6 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../layouts/Hero.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+// https://raw.githubusercontent.com/ZakaHaceCosas/personaplus-website/main/static/pp-b24-screen-1.webp
+import screenshot1 from "../../static/pp-b24-screen-1.webp";
+import screenshot2 from "../../static/pp-b24-screen-2.webp";
 ---
 
 <Layout title="PersonaPlus">
@@ -14,19 +18,19 @@ import Footer from "../components/Footer.astro";
             <h1>
                 What is <span>PersonaPlus</span>?
             </h1>
-            <h2>
+            <p>
                 PersonaPlus is a simple app to help you <span
                     >give yourself a plus</span
                 >
                 by providing routines, tips, insights, reminders, and everything
                 else you need to lead a sportier and healthier life.
-            </h2>
+            </p>
         </div>
         <div class="imageDiv">
-            <img
+            <Image
                 loading="lazy"
                 decoding="async"
-                src="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus-website/main/static/pp-b24-screen-1.webp"
+                src={screenshot1}
                 alt="Real app screenshot, showcasing a session timer."
             />
         </div>
@@ -35,16 +39,16 @@ import Footer from "../components/Footer.astro";
     <section role="article">
         <div class="textDiv">
             <h1>How does it work?</h1>
-            <h3>
+            <p>
                 Simple. Create <span>objectives</span> (AKA routines), and the app
                 will handle reminders, live sessions, and in the future, even more.
-            </h3>
+            </p>
         </div>
         <div class="imageDiv">
-            <img
+            <Image
                 loading="lazy"
                 decoding="async"
-                src="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus-website/main/static/pp-b24-screen-2.webp"
+                src={screenshot2}
                 alt="Real app screenshot, showcasing the dashboard."
             />
         </div>
