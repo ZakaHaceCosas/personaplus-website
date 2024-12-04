@@ -1,4 +1,7 @@
 <div id="hero" role="banner">
+    <div id="moving">
+        <p></p>
+    </div>
     <h1>
         GIVE YOURSELF A
         <br />
@@ -9,4 +12,30 @@
         (actually) take care of your life, (privately) understand you, and
         (effectively) help you reach your best version.
     </h3>
+    <div id="moving2">
+        <p></p>
+    </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        try {
+            const moving: HTMLElement | null =
+                document.querySelector("#moving p");
+            const moving2: HTMLElement | null =
+                document.querySelector("#moving2 p");
+            const text =
+                "CREATE ROUTINES · KEEP GOING · GET REMINDERS · STAY MOTIVATED · GET INSIGHTS · SEE YOUR PROGRESS · GIVE YOURSELF A PLUS! · ";
+            const text2 =
+                "Understand your progress · Turn weird medical numbers into insights you get · Flex your streak! · Use the phone for something useful · Give yourself a plus! · "; // idk
+            // btw yes i'm adding streaks to the app, some day
+            if (!moving || !moving2) {
+                throw new Error("No #moving, or no #moving2 :(");
+            }
+
+            moving.textContent = text.repeat(5);
+            moving2.textContent = text2.repeat(5);
+        } catch (e) {
+            console.error(e);
+        }
+    });
+</script>

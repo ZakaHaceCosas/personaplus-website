@@ -190,7 +190,36 @@ section div.imageDiv img {
     text-align: center;
     text-wrap: stable;
 }
-
+#moving,
+#moving2 {
+    width: 100vw;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+#moving p,
+#moving2 p {
+    display: inline-block;
+    font-size: 20px;
+    opacity: 0.25;
+    white-space: nowrap;
+}
+#moving p {
+    animation: scroll 50s linear infinite;
+}
+#moving2 p {
+    animation: scroll 60s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(30%);
+    }
+    100% {
+        transform: translateX(-30%);
+    }
+}
 img {
     display: inline-block;
     width: 50%;
