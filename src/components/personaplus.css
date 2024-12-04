@@ -115,12 +115,6 @@ nav {
     height: 35px;
 }
 
-nav .navLinks {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
 /* sections */
 section {
     display: flex;
@@ -272,12 +266,6 @@ footer .footerSection img {
     background-color: transparent;
 }
 
-hr {
-    width: 100%;
-    height: 1px;
-    background-color: var(--GOD);
-}
-
 #smallLogo {
     height: 50px;
     width: 50px;
@@ -328,10 +316,6 @@ footer .social-icons svg:hover path {
     #bigLogo {
         display: none;
     }
-    header {
-        flex-direction: column;
-        height: auto;
-    }
     footer {
         align-items: flex-start;
     }
@@ -358,10 +342,6 @@ footer .social-icons svg:hover path {
     #hero h1 span {
         font-size: 8vh;
         line-height: 4vh;
-    }
-    #hero img {
-        width: 70%;
-        height: auto;
     }
     nav {
         width: calc(100vw - 40px);
