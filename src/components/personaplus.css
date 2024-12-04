@@ -143,11 +143,11 @@ section div.imageDiv {
     justify-content: center !important;
 }
 section div.textDiv h1 {
-    font-size: 45px;
+    font-size: 40px;
 }
 section div.textDiv p {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
 }
 section div.imageDiv img {
     flex: 1;
@@ -331,10 +331,10 @@ footer .social-icons svg:hover path {
         flex-direction: column;
     }
     #hero {
-        flex-direction: column-reverse !important;
         height: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        min-height: 100vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     #hero h1 {
         font-size: 4vh;
@@ -342,6 +342,9 @@ footer .social-icons svg:hover path {
     #hero h1 span {
         font-size: 8vh;
         line-height: 4vh;
+    }
+    #hero h3 {
+        max-width: 75vw;
     }
     nav {
         width: calc(100vw - 40px);
