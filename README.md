@@ -3,16 +3,18 @@
 Website for the [PersonaPlus](https://github.com/ZakaHaceCosas/personaplus) project, a health & wellbeing app in React Native & Expo.
 
 Website powered by Vercel.
-<!--## TODO
 
-- [ ] Bring back languages.
-- [ ] Add remaining images and content.
+## Stuff TO-DO
+
+- [ ] Translating.
+- [X] Add remaining images and content.
 - [X] Optimize images with `.webp` format.
 - [X] Optimize CSS as much as possible.
 - [X] Fix responsive design (it works, but poorly).
 - [X] Perhaps replace some text buttons with icons?
 - [X] Make the page static with Astro so no tons of JS are sent to the browser.
- -->
+- [ ] Add an Astro blog (yes).
+
 ## Astro commands
 
 All commands are run from the root of the project, from a terminal:
