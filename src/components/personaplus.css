@@ -122,12 +122,12 @@ section {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--Dark);
+    background-color: var(--Darker);
     flex-direction: row;
 }
 section:nth-of-type(2) {
     flex-direction: row-reverse;
-    background-color: var(--Darker);
+    background-color: var(--Dark);
 }
 section div {
     display: flex;
@@ -163,7 +163,7 @@ section div.imageDiv img {
     background-image: linear-gradient(
         to bottom,
         var(--Background),
-        var(--Dark)
+        var(--Darker)
     );
     display: flex;
     flex-direction: column;
@@ -289,7 +289,7 @@ footer .footerSection img {
     gap: 10px;
     padding: 20px 0;
     width: 100vw;
-    min-height: 75vh;
+    min-height: 50vh;
     align-items: center;
     justify-content: center;
     background-color: transparent;
