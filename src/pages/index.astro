@@ -4,9 +4,10 @@ import Hero from "../layouts/Hero.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
-// https://raw.githubusercontent.com/ZakaHaceCosas/personaplus-website/main/static/pp-b24-screen-1.webp
-import screenshot1 from "../../static/pp-b24-screen-1.webp";
-import screenshot2 from "../../static/pp-b24-screen-2.webp";
+// import screenshot1 from "../../static/1.webp";
+import screenshot2 from "../../static/2.webp";
+import screenshot3 from "../../static/3.webp";
+// import screenshot4 from "../../static/4.webp";
 ---
 
 <Layout title="PersonaPlus">
@@ -30,12 +31,11 @@ import screenshot2 from "../../static/pp-b24-screen-2.webp";
             <Image
                 loading="lazy"
                 decoding="async"
-                src={screenshot1}
+                src={screenshot2}
                 alt="Real app screenshot, showcasing a session timer."
             />
         </div>
     </section>
-
     <section role="article">
         <div class="textDiv">
             <h1>How does it work?</h1>
@@ -48,8 +48,8 @@ import screenshot2 from "../../static/pp-b24-screen-2.webp";
             <Image
                 loading="lazy"
                 decoding="async"
-                src={screenshot2}
-                alt="Real app screenshot, showcasing the dashboard."
+                src={screenshot3}
+                alt="Real app screenshot, showcasing the screen from where you create objectives."
             />
         </div>
     </section>
