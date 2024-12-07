@@ -1,5 +1,6 @@
 ---
 import "../components/personaplus.css";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 interface Props {
     title: string;
@@ -74,3 +75,5 @@ const { title } = Astro.props;
         <slot />
     </body>
 </html>
+
+<SpeedInsights />

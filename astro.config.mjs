@@ -2,7 +2,6 @@
 import { defineConfig } from "astro/config";
 import vercelStatic from "@astrojs/vercel";
 import mdx from "@astrojs/mdx";
-// import SpeedInsights from "@vercel/speed-insights/";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,9 +10,6 @@ export default defineConfig({
 
     adapter: vercelStatic({
         webAnalytics: {
-            enabled: true,
-        },
-        speedInsights: {
             enabled: true,
         },
     }),
