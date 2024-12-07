@@ -333,14 +333,22 @@ footer .social-icons svg:hover path {
     section,
     section:nth-of-type(2) {
         flex-direction: column;
-        height: 200vh;
-        padding: 20px;
-        padding-bottom: 200px;
-        width: calc(100vw - 40px);
-        margin-top: 100px;
+        height: auto;
+        padding: 50px 0px;
+        gap: 50px;
+        width: 100vw;
     }
-    section img {
-        width: 70%;
+    section div {
+        flex: 0;
+    }
+    section .textDiv {
+        padding: 0px 40px;
+    }
+    section .imageDiv {
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        height: auto;
     }
     #bigLogo {
         display: none;
@@ -361,7 +369,7 @@ footer .social-icons svg:hover path {
     }
     #hero {
         height: auto;
-        min-height: 100vh;
+        min-height: calc(100vh - 120px);
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -377,5 +385,23 @@ footer .social-icons svg:hover path {
     }
     nav {
         width: calc(100vw - 40px);
+    }
+    .rowWithStuff {
+        padding: 20px 40px;
+        max-width: calc(100vw - 80px);
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-self: flex-start;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    footer .footerStuff {
+        align-items: flex-start;
+    }
+    footer .footerStuff p {
+        text-align: left;
+        max-width: 100%;
     }
 }
