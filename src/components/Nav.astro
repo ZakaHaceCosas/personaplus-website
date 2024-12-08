@@ -1,18 +1,34 @@
 ---
 import { Image } from "astro:assets";
-import personaPlusSmallLogo from "../../public/logo256.webp";
+import personaPlusSmallLogo from "../../public/logo256transparent.webp";
 ---
 
 <nav role="navigation">
-    <Image
-        src={personaPlusSmallLogo}
-        id="smallLogo"
-        alt="PersonaPlus logo"
-        loading={"eager"}
-    />
-    <h1 class="brandFont" id="bigLogo">PersonaPlus</h1>
-    <!-- <div class="navLinks">
-        <a href="/"> Home</a>
+    <div class="navBrand">
+        <Image
+            src={personaPlusSmallLogo}
+            id="smallLogo"
+            alt="PersonaPlus logo"
+            loading={"eager"}
+        />
+        <h1 class="brandFont" id="bigLogo">Persona<br />Plus</h1>
+    </div>
+    <div class="navLinks" id="actualNavMenu">
+        <a href="/">Home</a>
+        <a
+            href="https://github.com/users/ZakaHaceCosas/projects/1"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Roadmap
+        </a>
+        <a
+            href="https://github.com/ZakaHaceCosas/personaplus/issues/new/choose"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Report an issue
+        </a>
         <a
             href="https://github.com/ZakaHaceCosas/personaplus/blob/main/PRIVACY.md"
             target="_blank"
@@ -20,5 +36,29 @@ import personaPlusSmallLogo from "../../public/logo256.webp";
         >
             Privacy
         </a>
-    </div> -->
+        <a href="#footer">Follow us</a>
+    </div>
+    <div class="navLinks navToggleWrapper">
+        <a
+            id="navToggle"
+            aria-label="Toggle navigation"
+            style="cursor: pointer;"
+        >
+            ☰
+        </a>
+    </div>
 </nav>
+<script>
+    const toggleButton: HTMLElement | null =
+        document.getElementById("navToggle");
+    const navMenu: HTMLElement | null =
+        document.getElementById("actualNavMenu");
+
+    if (!toggleButton || !navMenu) {
+        throw new Error("no nav");
+    }
+
+    toggleButton.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+</script>
