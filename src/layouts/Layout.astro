@@ -4,9 +4,10 @@ import SpeedInsights from "@vercel/speed-insights/astro";
 
 interface Props {
     title: string;
+    description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,27 +17,27 @@ const { title } = Astro.props;
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#32FF80" />
-        <meta name="description" content="Give yourself a plus!" />
+        <meta name="description" content={description} />
         <link rel="apple-touch-icon" href="/logo256.webp" />
 
         <!-- Open Graph (OG) Meta Tags -->
-        <meta property="og:title" content="PersonaPlus" />
+        <meta property="og:title" content={title} />
         <meta property="og:site_name" content="PersonaPlus" />
-        <meta property="og:description" content="Give yourself a plus!" />
+        <meta property="og:description" content={description} />
         <meta
             property="og:image"
-            content="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus/main/assets/PP_BANNER.png"
+            content="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus/main/assets/design/PP_BANNER.webp"
         />
         <meta property="og:url" content="https://personaplus.vercel.app" />
         <meta property="og:type" content="website" />
 
         <!-- Twitter Card Meta Tags -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PersonaPlus" />
-        <meta name="twitter:description" content="Give yourself a plus!" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
         <meta
             name="twitter:image"
-            content="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus/main/assets/PP_BANNER.png"
+            content="https://raw.githubusercontent.com/ZakaHaceCosas/personaplus/main/assets/design/PP_BANNER.webp"
         />
         <meta name="twitter:url" content="https://personaplus.vercel.app" />
         <meta name="twitter:site" content="@ZakaHaceCosas" />
@@ -50,16 +51,15 @@ const { title } = Astro.props;
             content="salud, bienestar, aplicación móvil, PersonaPlus, fitness, mental health"
         />
         <meta name="revisit-after" content="60 days" />
-        <meta name="copyright" content="2024 PersonaPlus" />
+        <meta
+            name="copyright"
+            content="2024 ZakaHaceCosas and the GitHub contributors"
+        />
         <meta name="rating" content="General" />
         <meta name="distribution" content="global" />
         <meta name="language" content="EN" />
         <meta http-equiv="Content-Language" content="en" />
 
-        <!--
-        manifest.json provides metadata used when your web app is installed on a
-        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-        -->
         <link rel="manifest" href="/manifest.json" />
         <title>{title}</title>
 

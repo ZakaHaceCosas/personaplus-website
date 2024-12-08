@@ -4,6 +4,11 @@
     "description": "Give yourself a plus!",
     "icons": [
         {
+            "src": "logo128.webp",
+            "type": "image/webp",
+            "sizes": "128x128"
+        },
+        {
             "src": "logo256.webp",
             "type": "image/webp",
             "sizes": "256x256"
