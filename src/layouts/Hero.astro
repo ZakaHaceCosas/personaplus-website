@@ -37,16 +37,21 @@
             const moving2: HTMLElement | null =
                 document.querySelector("#moving2 p");
             const text =
-                "CREATE ROUTINES · KEEP GOING · GET REMINDERS · STAY MOTIVATED · GET INSIGHTS · SEE YOUR PROGRESS · GIVE YOURSELF A PLUS! · ";
+                "CREATE ROUTINES · KEEP GOING · GET REMINDERS · GET INSIGHTS · SEE YOUR PROGRESS · <b>GIVE YOURSELF A PLUS!</b> · STAY MOTIVATED · ";
             const text2 =
-                "Understand your progress · Turn weird medical numbers into insights you get · Flex your streak! · Use the phone for something useful · Give yourself a plus! · "; // idk
+                "Understand your progress · Turn weird medical numbers into insights you get · <i>Flex your streak!</i> · Use the phone for something useful · Give yourself a plus! · Get motivation to create healthier habits · "; // idk
             // btw yes i'm adding streaks to the app, some day
             if (!moving || !moving2) {
                 throw new Error("No #moving, or no #moving2 :(");
             }
 
-            moving.textContent = text.repeat(5);
-            moving2.textContent = text2.repeat(5);
+            const finalText =
+                text.repeat(5) + " <b><span>GIVE YOURSELF A PLUS!</span></b>";
+            const finalText2 =
+                text2.repeat(5) + " <b><span>Give yourself a plus!</span></b>";
+
+            moving.innerHTML = finalText;
+            moving2.innerHTML = finalText2;
         } catch (e) {
             console.error(e);
         }
