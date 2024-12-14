@@ -179,16 +179,22 @@ section div.imageDiv img {
     max-height: 95%;
     height: 95%;
     object-fit: scale-down;
+    transition: box-shadow 350ms ease, border-radius 350ms ease,
+        transform 350ms ease, background-color 350ms ease;
+    border-radius: 20px;
+}
+section div.imageDiv img:hover {
+    will-change: box-shadow, border-radius, transform, background-color;
+    box-shadow: var(--TrickyShadow) var(--GOD), var(--Shadow) var(--GOD);
+    background-color: var(--GODstroke);
+    border-radius: 30px;
+    transform: scale(1.05);
 }
 
 #hero {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(
-        to bottom,
-        var(--Background),
-        var(--Darker)
-    );
+    background-image: linear-gradient(to bottom, #000, var(--Darker));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -368,10 +374,10 @@ footer .social-icons svg:hover path {
     section div {
         flex: 0;
     }
-    section .textDiv {
+    section div.textDiv {
         padding: 0px 40px;
     }
-    section .imageDiv {
+    section div.imageDiv {
         padding: 0;
         margin: 0;
         width: 80%;
