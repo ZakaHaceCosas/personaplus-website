@@ -1,0 +1,5 @@
+destroy:
+  intensities: ["*"]
+  targets:
+    - ".astro"
+commitActions: true

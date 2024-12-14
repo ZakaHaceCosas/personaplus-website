@@ -1,13 +1,4 @@
 {
-    "files.exclude": {
-        "**/node_modules": true,
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/android": true
-    },
     "terminal.integrated.suggest.enabled": true,
     "terminal.integrated.suggest.builtinCompletions": {
         "pwshCode": false,
@@ -27,8 +18,6 @@
     "telemetry.telemetryLevel": 0,
     "telemetry.enableTelemetry": false,
     "files.autoSave": "off",
-    "editor.fontFamily": "'JetBrains Mono', 'Roboto Mono', Consolas, 'Courier New', monospace",
-    "editor.fontWeight": 400,
     "editor.fontLigatures": true,
     "window.zoomLevel": -0.5,
     "editor.formatOnSave": true,
