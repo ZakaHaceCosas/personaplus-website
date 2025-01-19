@@ -3,3 +3,6 @@ destroy:
     targets:
         - ".astro"
 commitActions: true
+flagless:
+  flaglessDestroy: true
+  flaglessUpdate: true
