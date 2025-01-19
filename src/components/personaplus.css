@@ -129,10 +129,10 @@ nav {
     padding: 10px 15px;
     text-decoration: none;
     transition: background-color 350ms ease;
+    border-radius: var(--BorderRadius);
 }
 .navLinks a:hover {
     will-change: background-color;
-    border-radius: 10px;
     background-color: var(--Background);
 }
 .navToggleWrapper {
@@ -179,15 +179,14 @@ section div.imageDiv img {
     max-height: 95%;
     height: 95%;
     object-fit: scale-down;
-    transition: box-shadow 350ms ease, border-radius 350ms ease,
-        transform 350ms ease, background-color 350ms ease;
-    border-radius: 20px;
+    transition: box-shadow 350ms ease, transform 350ms ease,
+        background-color 350ms ease;
+    border-radius: 30px;
 }
 section div.imageDiv img:hover {
-    will-change: box-shadow, border-radius, transform, background-color;
+    will-change: box-shadow, transform, background-color;
     box-shadow: var(--TrickyShadow) var(--GOD), var(--Shadow) var(--GOD);
     background-color: var(--GODstroke);
-    border-radius: 30px;
     transform: scale(1.05);
 }
 
