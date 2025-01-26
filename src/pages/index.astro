@@ -4,10 +4,9 @@ import Hero from "../layouts/Hero.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
-// import screenshot1 from "../../static/1.webp";
+import screenshot1 from "../../static/1.webp";
 import screenshot2 from "../../static/2.webp";
 import screenshot3 from "../../static/3.webp";
-// import screenshot4 from "../../static/4.webp";
 ---
 
 <Layout title="PersonaPlus" description="Give yourself a plus!">
@@ -20,11 +19,27 @@ import screenshot3 from "../../static/3.webp";
                 What is <span>PersonaPlus</span>?
             </h1>
             <p>
-                PersonaPlus is a simple app to help you <span
-                    >give yourself a plus</span
-                >
-                by providing routines, tips, insights, reminders, and everything
-                else you need to lead a sportier and healthier life.
+                Simple, an app to help you <span> give yourself a plus </span>
+                by providing routines, insights, and the reminders you need for a
+                sportier and healthier life.
+            </p>
+        </div>
+        <div class="imageDiv">
+            <Image
+                loading="lazy"
+                decoding="async"
+                src={screenshot1}
+                alt="Real app screenshot, showcasing a session timer."
+            />
+        </div>
+    </section>
+    <section role="article">
+        <div class="textDiv">
+            <h1>Set a <span>routine</span> and get down to it</h1>
+            <p>
+                Simple. Create <span>Active Objectives</span> (AKA routines), and
+                the app will handle reminders, live sessions, and in the future,
+                even more.
             </p>
         </div>
         <div class="imageDiv">
@@ -32,16 +47,16 @@ import screenshot3 from "../../static/3.webp";
                 loading="lazy"
                 decoding="async"
                 src={screenshot2}
-                alt="Real app screenshot, showcasing a session timer."
+                alt="Real app screenshot, showcasing the screen from where you create objectives."
             />
         </div>
     </section>
     <section role="article">
         <div class="textDiv">
-            <h1>How does it work?</h1>
+            <h1>Get your <span>insights</span> and see how you're doing</h1>
             <p>
-                Simple. Create <span>objectives</span> (AKA routines), and the app
-                will handle reminders, live sessions, and in the future, even more.
+                Instantly get a basic report on some of your health stats. Much
+                more is yet to be added, though.
             </p>
         </div>
         <div class="imageDiv">
@@ -55,7 +70,7 @@ import screenshot3 from "../../static/3.webp";
     </section>
     <section role="article">
         <div class="textDiv">
-            <h1>This one's <span>different.</span></h1>
+            <h1>This one's <span>different</span>.</h1>
             <p>
                 No ads. No premium plans. No tracking. No privacy concerns. No
                 messy licenses.
