@@ -7,20 +7,20 @@ Website powered by Vercel.
 ## Stuff TO-DO
 
 - [ ] Translating.
-- [X] Add remaining images and content.
-- [X] Optimize images with `.webp` format.
-- [X] Optimize CSS as much as possible.
-- [X] Fix responsive design (it works, but poorly).
-- [X] Perhaps replace some text buttons with icons?
-- [X] Make the page static with Astro so no tons of JS are sent to the browser.
+- [x] Add remaining images and content.
+- [x] Optimize images with `.webp` format.
+- [x] Optimize CSS as much as possible.
+- [x] Fix responsive design (it works, but poorly).
+- [x] Perhaps replace some text buttons with icons?
+- [x] Make the page static with Astro so no tons of JS are sent to the browser.
 - [ ] Add an Astro blog (yes).
 
 ## Astro commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
+| Command                    | Action                                           |
+| :------------------------- | :----------------------------------------------- |
 | `pnpm install`             | Installs dependencies                            |
 | `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
 | `pnpm run build`           | Build your production site to `./dist/`          |

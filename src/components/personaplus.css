@@ -35,10 +35,8 @@
     --Background: rgba(14, 16, 19, 1);
     --Darker: rgba(20, 23, 28, 1);
     --Dark: rgba(32, 35, 40, 1);
-    --ACE: rgba(50, 128, 255, 1);
-    --GOD: rgba(50, 255, 128, 1);
-    --GODstroke: rgba(25, 128, 64, 1);
-    --ACEstroke: rgba(25, 64, 128, 1);
+    --ACE: rgba(50, 255, 128, 1);
+    --ACEstroke: rgba(25, 128, 64, 1);
     --BorderRadius: 15px;
     --TrickyShadow: 0 0 0 0.075rem;
     --Shadow: 0px 0px 1.75rem 0px;
@@ -50,14 +48,16 @@ a {
 }
 a:hover {
     will-change: color;
-    color: var(--GOD);
+    color: var(--ACE);
 }
 
 span {
-    color: var(--GOD);
+    color: var(--ACE);
 }
 .btn {
-    transition: transform 350ms ease, box-shadow 350ms ease;
+    transition:
+        transform 350ms ease,
+        box-shadow 350ms ease;
     text-decoration: none;
     text-align: center;
     display: flex;
@@ -75,19 +75,12 @@ span {
 .buttonAce {
     background-color: var(--ACE);
     border-color: var(--ACEstroke);
-    color: white;
-}
-.buttonAce:hover {
-    box-shadow: var(--TrickyShadow) var(--ACE), var(--Shadow) var(--ACEstroke);
-    color: white;
-}
-.buttonGod {
-    background-color: var(--GOD);
-    border-color: var(--GODstroke);
     color: black;
 }
-.buttonGod:hover {
-    box-shadow: var(--TrickyShadow) var(--GOD), var(--Shadow) var(--GODstroke);
+.buttonAce:hover {
+    box-shadow:
+        var(--TrickyShadow) var(--ACE),
+        var(--Shadow) var(--ACEstroke);
     color: black;
 }
 .brandFont {
@@ -176,17 +169,20 @@ section div.textDiv p {
 section div.imageDiv img {
     flex: 1;
     width: 50%;
-    max-height: 95%;
-    height: 95%;
+    max-height: 80%;
+    height: 80%;
     object-fit: scale-down;
-    transition: box-shadow 350ms ease, transform 350ms ease,
+    transition:
+        box-shadow 350ms ease,
+        transform 350ms ease,
         background-color 350ms ease;
-    border-radius: 30px;
 }
 section div.imageDiv img:hover {
     will-change: box-shadow, transform, background-color;
-    box-shadow: var(--TrickyShadow) var(--GOD), var(--Shadow) var(--GOD);
-    background-color: var(--GODstroke);
+    box-shadow:
+        var(--TrickyShadow) var(--ACE),
+        var(--Shadow) var(--ACE);
+    background-color: var(--ACEstroke);
     transform: scale(1.05);
 }
 
@@ -210,7 +206,7 @@ section div.imageDiv img:hover {
 #hero h1 span {
     font-size: 15vh;
     line-height: 15.5vh;
-    color: var(--GOD);
+    color: var(--ACE);
 }
 
 #hero h3 {
@@ -354,7 +350,7 @@ footer .social-icons svg path {
 
 footer .social-icons svg:hover path {
     will-change: fill;
-    fill: var(--GOD);
+    fill: var(--ACE);
 }
 #bigLogo {
     line-height: 90%;

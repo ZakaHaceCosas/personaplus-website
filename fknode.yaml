@@ -4,5 +4,5 @@ destroy:
         - ".astro"
 commitActions: true
 flagless:
-  flaglessDestroy: true
-  flaglessUpdate: true
+    flaglessDestroy: true
+    flaglessUpdate: true
