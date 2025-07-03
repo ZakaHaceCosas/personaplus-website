@@ -1,6 +1,6 @@
 # PersonaPlus Website
 
-Website for the [PersonaPlus](https://github.com/ZakaHaceCosas/personaplus) project, a health & wellbeing app in React Native & Expo.
+Website for the [PersonaPlus](https://github.com/GiveItAPlus/personaplus) project, a health & wellbeing app in React Native & Expo.
 
 Website powered by Vercel.
 
