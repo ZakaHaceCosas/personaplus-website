@@ -12,11 +12,11 @@
     },
     "dependencies": {
         "@astrojs/check": "^0.9.4",
-        "@astrojs/mdx": "^4.2.4",
-        "@astrojs/vercel": "^8.1.3",
+        "@astrojs/mdx": "^4.3.0",
+        "@astrojs/vercel": "^8.2.1",
         "@vercel/speed-insights": "^1.2.0",
-        "astro": "^5.7.2",
-        "sharp": "^0.33.5",
+        "astro": "^5.11.0",
+        "sharp": "^0.34.2",
         "typescript": "^5.8.3"
     },
     "pnpm": {
@@ -29,6 +29,6 @@
         ]
     },
     "devDependencies": {
-        "prettier": "^3.5.3"
+        "prettier": "^3.6.2"
     }
 }
