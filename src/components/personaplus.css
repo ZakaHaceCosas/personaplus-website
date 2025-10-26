@@ -264,6 +264,7 @@ footer {
     box-shadow: var(--Shadow) #000;
     max-width: calc(100vw - 80px);
     padding: 40px;
+    padding-bottom: 120px;
     width: 100%;
 }
 .footerStuff {
@@ -456,4 +457,19 @@ footer .social-icons svg:hover path {
     .navToggleWrapper {
         display: block;
     }
+}
+
+/* temp */
+.alert-banner {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #fdd835; /* amarillo warning */
+    color: #000;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #fbc02d;
+    position: fixed;
+    bottom: 0px;
 }

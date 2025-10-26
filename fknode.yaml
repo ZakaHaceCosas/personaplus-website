@@ -1,8 +1,12 @@
 destroy:
-    intensities: ["*"]
+    intensities: "*"
     targets:
         - ".astro"
 commitActions: true
 flagless:
     flaglessDestroy: true
     flaglessUpdate: true
+launchCmd:
+    - $dev
+commitCmd:
+    - $prettier
