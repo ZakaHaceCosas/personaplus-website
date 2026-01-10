@@ -6,7 +6,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
     output: "static",
-    site: "https://personaplus.vercel.app/",
+    site: "https://personaplus.zhc.es/",
 
     adapter: vercelStatic({
         webAnalytics: {

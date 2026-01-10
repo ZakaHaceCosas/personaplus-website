@@ -17,10 +17,10 @@
     background-color: #00000010;
 }
 ::-webkit-scrollbar-thumb {
-    background: #32ff80;
+    background: #3280ff;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #22af70;
+    background: #2270af;
 }
 
 .disclaimer {
@@ -35,8 +35,8 @@
     --Background: rgba(14, 16, 19, 1);
     --Darker: rgba(20, 23, 28, 1);
     --Dark: rgba(32, 35, 40, 1);
-    --ACE: rgba(50, 255, 128, 1);
-    --ACEstroke: rgba(25, 128, 64, 1);
+    --ACE: rgba(50, 128, 255, 1);
+    --ACEstroke: rgba(25, 64, 128, 1);
     --BorderRadius: 15px;
     --TrickyShadow: 0 0 0 0.075rem;
     --Shadow: 0px 0px 1.75rem 0px;
@@ -67,21 +67,17 @@ span {
     max-height: 20px;
     padding: 12px 24px;
     border: 4px solid;
-}
-.btn:hover {
-    transform: scale(1.1);
-    will-change: transform, box-shadow;
-}
-.buttonAce {
     background-color: var(--ACE);
     border-color: var(--ACEstroke);
-    color: black;
+    color: white;
 }
-.buttonAce:hover {
+.btn:hover {
+    will-change: transform, box-shadow;
+    transform: scale(1.1);
     box-shadow:
         var(--TrickyShadow) var(--ACE),
         var(--Shadow) var(--ACEstroke);
-    color: black;
+    color: white;
 }
 .brandFont {
     font-family: "JetBrains Mono";
@@ -134,56 +130,54 @@ nav {
 }
 /* sections */
 section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     background-color: var(--Darker);
-    flex-direction: row;
 }
 section:nth-of-type(2) {
-    flex-direction: row-reverse;
     background-color: var(--Dark);
 }
-section div {
+section:nth-of-type(4) {
+    background-color: var(--Dark);
+}
+section .textDiv {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    flex: 1;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 50px;
+    padding: 60px;
 }
-section div.imageDiv {
-    align-items: center !important;
-    justify-content: center !important;
+section .imageDiv {
+    display: grid;
+    place-items: center;
 }
-section div.textDiv h1 {
+section div h1 {
     font-size: 40px;
 }
-section div.textDiv p {
+section div p {
     font-weight: 400;
     font-size: 20px;
 }
-section div.imageDiv img {
-    flex: 1;
-    width: 50%;
-    max-height: 80%;
-    height: 80%;
+section .imageDiv img {
+    width: auto;
+    max-height: 60vh;
     object-fit: scale-down;
+    will-change: box-shadow, transform, background-color;
     transition:
         box-shadow 350ms ease,
         transform 350ms ease,
         background-color 350ms ease;
 }
-section div.imageDiv img:hover {
-    will-change: box-shadow, transform, background-color;
+section img:hover {
     box-shadow:
         var(--TrickyShadow) var(--ACE),
         var(--Shadow) var(--ACE);
     background-color: var(--ACEstroke);
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 #hero {
@@ -359,25 +353,19 @@ footer .social-icons svg:hover path {
 }
 /* responsive */
 @media only screen and (max-width: 900px) {
-    section,
-    section:nth-of-type(2) {
-        flex-direction: column;
+    section {
+        grid-template-columns: 1fr;
         height: auto;
         padding: 50px 0px;
         gap: 50px;
         width: 100vw;
     }
-    section div {
-        flex: 0;
-    }
-    section div.textDiv {
+    section .textDiv {
         padding: 0px 40px;
     }
-    section div.imageDiv {
-        padding: 0;
-        margin: 0;
-        width: 80%;
-        height: auto;
+    section .imageDiv img {
+        max-height: 100vh;
+        max-width: 90vw;
     }
     #bigLogo {
         display: none;
