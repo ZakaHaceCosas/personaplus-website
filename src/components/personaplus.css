@@ -44,7 +44,7 @@
 
 /* button and link styles and transitions */
 a {
-    transition: color 350ms ease;
+    transition: color 400ms ease;
 }
 a:hover {
     will-change: color;
@@ -56,8 +56,8 @@ span {
 }
 .btn {
     transition:
-        transform 350ms ease,
-        box-shadow 350ms ease;
+        transform 400ms ease,
+        box-shadow 400ms ease;
     text-decoration: none;
     text-align: center;
     display: flex;
@@ -117,7 +117,7 @@ nav {
 .navLinks a {
     padding: 10px 15px;
     text-decoration: none;
-    transition: background-color 350ms ease;
+    transition: background-color 400ms ease;
     border-radius: var(--BorderRadius);
 }
 .navLinks a:hover {
@@ -131,7 +131,7 @@ nav {
 /* sections */
 section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     width: 100vw;
     height: 70vh;
@@ -144,11 +144,12 @@ section:nth-of-type(4) {
     background-color: var(--Dark);
 }
 section .textDiv {
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 60px;
 }
 section .imageDiv {
@@ -158,9 +159,13 @@ section .imageDiv {
 section div h1 {
     font-size: 40px;
 }
-section div p {
+section div p,
+section div li {
     font-weight: 400;
     font-size: 20px;
+}
+ul {
+    margin-left: 20px;
 }
 section .imageDiv img {
     width: auto;
@@ -168,9 +173,9 @@ section .imageDiv img {
     object-fit: scale-down;
     will-change: box-shadow, transform, background-color;
     transition:
-        box-shadow 350ms ease,
-        transform 350ms ease,
-        background-color 350ms ease;
+        box-shadow 400ms ease,
+        transform 400ms ease,
+        background-color 400ms ease;
 }
 section img:hover {
     box-shadow:
@@ -331,7 +336,7 @@ footer .social-icons {
 }
 
 footer .social-icons svg {
-    transition: transform 350ms ease;
+    transition: transform 400ms ease;
 }
 
 footer .social-icons svg:hover {
@@ -340,7 +345,7 @@ footer .social-icons svg:hover {
 }
 
 footer .social-icons svg path {
-    transition: fill 350ms ease;
+    transition: fill 400ms ease;
 }
 
 footer .social-icons svg:hover path {
